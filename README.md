@@ -50,3 +50,16 @@ Accepts a binary PDF document via `multipart/form-data`, chunks the text using a
 
 ### `POST /query`
 Accepts a query string, triggers the multi-query extraction pipeline to hit the vector store independently for each subset of the question, drops the aggregated chunks into the Gemini LLM window, and responds with a cleanly structured JSON extraction dictionary!
+
+**Example Request:**
+`POST /query?query=What is the candidate name? What is the email address? What is the phone number? What is the highest qualification?`
+
+**Example Response:**
+```json
+{
+  "candidate_name": "SHASHIDHAR REDDY D",
+  "email_address": "shashidharreddy893@gmail.com",
+  "phone_number": "+91 6301670751",
+  "highest_qualification": "B.Tech - Electronics and Communication Engineering"
+}
+```
