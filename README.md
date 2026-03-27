@@ -1,5 +1,7 @@
 # 🤖 Agentic RAG Backend
 
+**Topics:** `python` | `fastapi` | `rag` | `agentic-ai` | `gemini` | `faiss` | `langchain` | `llm` | `pdf-parsing`
+
 A highly capable, production-ready AI Agentic Retrieval-Augmented Generation (RAG) backend built with **FastAPI**. 
 
 This system processes PDF documents, chunk-embeds them using FAISS and SentenceTransformers locally, and intelligently extracts precise data using **Gemini 2.5 Flash** to natively return pure, structured JSON arrays back to your frontend applications.
